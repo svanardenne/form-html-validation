@@ -64,10 +64,11 @@ select:focus {
 
 .submit:hover {
   background: #48cadb;
+  border: 2px solid #123456;
 }
 
 .submit:active {
-  background: #123456;
+  background: #62b8c4;
 }
 
 
@@ -152,10 +153,11 @@ select {
   width: 92%;
   padding: 30px 0 30px 0;
   color: white;
-  border: none;
+  border: 2px solid #fafbfc;
   border-radius: 10px;
   font-size: 1.5rem;
-  transition: background .5s ease;
+  transition: background .5s ease,
+              border .5s ease;
   background: #62b8c4;
 }
 
