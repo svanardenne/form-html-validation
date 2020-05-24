@@ -24,10 +24,19 @@ body {
   border: none;
 }
 
+.signup {
+  width: 99%;
+  max-width: 800px;
+  margin: 0 auto 5px auto;
+}
+
 .main-form {
   border-top: 3px solid #123456;
-  margin-top: 5px;
   background: #fafbfc;
+  width: 99%;
+  max-width: 800px;
+  padding: 0 1em;
+  margin: 0 auto;
 }
 
 .container-1 {
@@ -165,32 +174,55 @@ select {
   display: block;
 }
 
+.inline {
+  display: flex;
+  flex-direction: column;
+}
+
+#zip {
+  width: 40%;
+}
+
+
 /* ================================= 
   Media Queries
 ==================================== */
 
 @media(min-width: 768px) {
-  .main-form,
-  .signup {
-    width: 50%;
-    margin: 3px auto 0 auto;
-  }
+  
   .main-footer {
     background: white;
   }
   .main-form {
     padding-bottom: 13px;
   }
+
   .inline {
-    display: flex;
+    flex-direction: row;
   }
+
   .inline label {
     width: 40%;
     align-self: center;
     margin-right: 30px;
   }
+
   .inline input {
     margin-bottom: 10px;
     overflow: auto;
+  }
+
+  #zip {
+    flex-basis: 200px;
+  }
+
+  .ziplabel {
+    flex-basis: 193px;
+  }
+
+  .container-1 input[type="text"],
+  .container-1 input[type="email"],
+  .container-1 input[type="tel"] {
+    padding: 4px 15px 4px 50px;
   }
 }
