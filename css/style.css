@@ -1,0 +1,133 @@
+/* ================================= 
+  Base Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 1.3em;
+  color: #6c737a;
+  font-family: 'Spinnaker', sans-serif;
+}
+
+#signup,
+#contact,
+#newsletter {
+  color: #123456;
+}
+
+.container-1,
+.container-2 {
+  border: none;
+}
+
+.main-form {
+  border-top: 3px solid #123456;
+  margin-top: 5px;
+}
+
+.container-1 {
+  border-bottom: 3px solid #123456;
+}
+
+.info {
+  margin-bottom: 30px;
+}
+
+.container-2 h2 {
+  margin-bottom: 0;
+}
+
+.main-header,
+.main-footer {
+  text-align: center;
+}
+
+/* ====== Pseudo Elements ====== */
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline-color: #123456;
+}
+
+
+/* ====== Header Styles ====== */
+
+.main-header {
+  border-bottom: 5px solid #123456;
+}
+
+.title {
+    text-transform: uppercase;
+    background: #123456;
+    color: white;
+    padding: 10px 0 10px 0;
+    margin: 0;
+}
+
+/* ====== Footer Styles ====== */
+
+
+.copyright {
+  color: #6c737a;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+/* ====== Input Styles ====== */
+
+input::placeholder {
+  font-style: italic;
+  font-size: 1rem;
+  text-align: right;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.container-1 input,
+.container-1 select {
+  margin: 10px 0 20px 0;
+}
+
+.container-1 input[type="text"],
+.container-1 input[type="email"],
+.container-1 input[type="tel"],
+textarea,
+select {
+  display: block;
+  background: #e2e6e9;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 15px 25px 15px 25px;
+  font-size: 1.5rem;
+  color: #6c737a
+}
+
+.other {
+  margin-top: 15px;
+}
+
+.submit {
+  display: block;
+  margin: 0 auto;
+  width: 92%;
+  padding: 30px 0 30px 0;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  background: #62b8c4;
+  font-size: 1.5rem;
+  margin:20px auto;
+}
