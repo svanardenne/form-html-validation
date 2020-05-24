@@ -27,6 +27,7 @@ body {
 .main-form {
   border-top: 3px solid #123456;
   margin-top: 5px;
+  background: #fafbfc;
 }
 
 .container-1 {
@@ -46,12 +47,27 @@ body {
   text-align: center;
 }
 
+.main-footer {
+  background: #fafbfc;
+  padding-top: 30px;
+}
+
 /* ====== Pseudo Elements ====== */
 
-input:focus,
-select:focus,
-textarea:focus {
-  outline-color: #123456;
+.container-1 input[type="text"]:focus,
+.container-1 input[type="email"]:focus,
+.container-1 input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+  outline-color: #62b8c4;
+}
+
+.submit:hover {
+  background: #48cadb;
+}
+
+.submit:active {
+  background: #123456;
 }
 
 
@@ -78,9 +94,13 @@ textarea:focus {
   font-size: 1.1rem;
 }
 
-/* ====== Input Styles ====== */
 
-input::placeholder {
+/* ================================= 
+  Input Styles
+==================================== */
+
+input::placeholder,
+#state {
   font-style: italic;
   font-size: 1rem;
   text-align: right;
@@ -112,7 +132,9 @@ select {
   width: 100%;
   padding: 15px 25px 15px 25px;
   font-size: 1.5rem;
-  color: #6c737a
+  color: #6c737a;
+  transition: all 2s ease;
+  outline-color: #123456;
 }
 
 .other {
@@ -127,7 +149,34 @@ select {
   color: white;
   border: none;
   border-radius: 10px;
-  background: #62b8c4;
   font-size: 1.5rem;
-  margin:20px auto;
+  transition: background .5s ease;
+  background: #62b8c4;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media(min-width: 769px) {
+  body {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .main-footer {
+    background: white;
+  }
+  .main-form {
+    padding-bottom: 13px;
+  }
+  .inline {
+    display: flex;
+  }
+  .inline label {
+    width: 40%;
+    align-self: center;
+  }
+  .container-1 input {
+    margin-bottom: 10px;
+  }
 }
