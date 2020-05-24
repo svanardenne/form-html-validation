@@ -161,11 +161,15 @@ select {
   background: #62b8c4;
 }
 
+.radio {
+  display: block;
+}
+
 /* ================================= 
   Media Queries
 ==================================== */
 
-@media(min-width: 769px) {
+@media(min-width: 768px) {
   .main-form,
   .signup {
     width: 50%;
