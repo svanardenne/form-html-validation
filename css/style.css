@@ -175,8 +175,10 @@ select {
   .inline label {
     width: 40%;
     align-self: center;
+    margin-right: 30px;
   }
-  .container-1 input {
+  .inline input {
     margin-bottom: 10px;
+    overflow: auto;
   }
 }
