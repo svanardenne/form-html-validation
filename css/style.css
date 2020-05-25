@@ -179,8 +179,13 @@ select {
   flex-direction: column;
 }
 
+.zip {
+  width: 100%;
+}
 
-
+#zip {
+  width: 40%;
+}
 
 /* ================================= 
   Media Queries
