@@ -179,9 +179,7 @@ select {
   flex-direction: column;
 }
 
-#zip {
-  width: 40%;
-}
+
 
 
 /* ================================= 
@@ -210,14 +208,6 @@ select {
   .inline input {
     margin-bottom: 10px;
     overflow: auto;
-  }
-
-  #zip {
-    flex-basis: 200px;
-  }
-
-  .ziplabel {
-    flex-basis: 193px;
   }
 
   .container-1 input[type="text"],
